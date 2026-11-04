@@ -4,7 +4,19 @@
   "product": "lab grown diamond / 人造钻石",
   "market": "US",
   "generated_at": "2026-11-04",
-  "plans": [],
-  "published_at": "2026-11-03 20:31"
+  "plans": [
+   {
+    "plan_id": "20261104-20000usd-google-test",
+    "budget_usd": 20000,
+    "budget_assumed": null,
+    "platforms": [
+     "google"
+    ],
+    "html": [
+     "google"
+    ]
+   }
+  ],
+  "published_at": "2026-11-03 20:34"
  }
 }
