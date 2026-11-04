@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Ads 推广方案：美国 · 人造钻石（月预算 $2,000）</title>
+<style>
+:root{--fg:#1f2328;--muted:#656d76;--line:#d0d7de;--bg:#f6f8fa;--accent:#0b5cad;--accent-bg:#e7f0fb;--bad:#ffd7d5;--bad-fg:#a40e26;--ok:#1a7f37;--nav:240px}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--fg)}
+nav{position:fixed;top:0;left:0;bottom:0;width:var(--nav);overflow-y:auto;background:var(--bg);border-right:1px solid var(--line);padding:18px 12px;font-size:13.5px}
+nav .brand{font-weight:700;margin-bottom:10px;line-height:1.3}
+nav a{display:block;color:var(--fg);text-decoration:none;padding:3px 8px;border-radius:6px}
+nav a:hover{background:#eaeef2}nav a.l2{padding-left:20px;color:var(--muted)}nav a.l3{padding-left:32px;color:var(--muted);font-size:12.5px}
+nav .sub{color:var(--muted);font-size:12px;margin-top:12px;padding-left:8px}
+main{margin-left:var(--nav);padding:26px 40px 80px;max-width:calc(var(--nav) + 1120px)}
+h1{font-size:25px;margin:0 0 4px}h2{font-size:20px;margin:40px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:16px;margin:18px 0 8px}
+.meta{color:var(--muted);font-size:13px;margin-bottom:16px}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;margin-right:6px;background:#eee}
+.badge.ok{background:#dafbe1;color:var(--ok)}.badge.bad{background:var(--bad);color:var(--bad-fg)}
+table{border-collapse:collapse;width:100%;margin:8px 0 12px;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}th{background:var(--bg);font-weight:600}
+td.k{width:150px;color:var(--muted);white-space:nowrap}
+.cites{white-space:nowrap}
+.cite{display:inline-block;font-size:11px;line-height:1.5;padding:0 5px;margin-left:2px;border-radius:4px;background:var(--accent-bg);color:var(--accent);text-decoration:none;vertical-align:1px;font-weight:600}
+.cite.sug{background:#eee;color:#555}.cite.calc{background:#fff4d6;color:#8a5a00}.cite.missing{background:var(--bad);color:var(--bad-fg)}
+.calc-l{font-size:11px;color:#8a5a00;margin-left:2px}
+mark.bad{background:var(--bad);color:var(--bad-fg);padding:0 2px;border-radius:3px}
+.callout{border-left:4px solid var(--accent);background:var(--accent-bg);padding:9px 14px;border-radius:6px;margin:10px 0}
+.callout.warn{border-color:#d4a72c;background:#fff8c5}.callout.risk{border-color:#cf222e;background:#ffebe9}
+.note{color:var(--muted);font-size:13px}
+.camp{border:2px solid #9fb8d6;border-radius:12px;padding:4px 18px 14px;margin:22px 0;background:#fbfdff}
+.camp>h3{font-size:18px;color:var(--accent)}
+.grp{border:1px solid var(--line);border-radius:10px;padding:2px 14px 10px;margin:14px 0;background:#fff}
+.grp>h4{margin:12px 0 6px;font-size:15.5px}
+.ad{border:1px dashed #b7c0c9;border-radius:8px;padding:8px 12px;margin:10px 0;background:#fcfcfc;break-inside:avoid}
+.ad h5{margin:4px 0 6px;font-size:14.5px}
+.tag{display:inline-block;font-size:11.5px;border-radius:4px;padding:0 6px;margin-left:6px;background:#eef;color:#335;font-weight:500}
+.copy{margin:4px 0 8px}.copy .fn{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.copy ol{margin:2px 0 2px 18px;padding:0}.copy li{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px}
+.len{font-size:11px;color:var(--muted);margin-left:6px;font-family:inherit}.len.over{color:var(--bad-fg);font-weight:700}
+.kw{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+.neg{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#8a1c1c}
+.lint{font-size:12.5px;color:var(--bad-fg);margin:4px 0}
+.lint.warn{color:#8a5a00}
+.ev{border-top:1px solid var(--line);padding:6px 0;font-size:13.5px}.ev:target{background:#fff8c5}.ev .id{font-weight:700;color:var(--accent);margin-right:6px}
+.gap{color:var(--bad-fg)}
+@media (max-width:900px){nav{display:none}main{margin-left:0;padding:16px}}
+@media print{nav{display:none}main{margin-left:0;padding:0;max-width:none}a{color:inherit;text-decoration:none}.camp,.grp{break-inside:auto}h2,h3,h4{break-after:avoid}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">Google Ads 推广方案</div>
+  <a href="#summary">核心要点</a>
+  <a href="#overview">1. 定位、预算与 KPI</a>
+  <a href="#setup">2. 账户与追踪准备</a>
+  <a href="#structure">3. 账户结构</a>
+  <a class="l2" href="#G1">G1 US_Search_NonBrand_LGD</a>
+    <a class="l3" href="#G1-1">G1-1 Oval Engagement Rings</a><a class="l3" href="#G1-2">G1-2 LGD Engagement Rings Generic</a><a class="l3" href="#G1-3">G1-3 LGD Stud Earrings</a><a class="l2" href="#G2">G2 US_Shopping_Standard_LGD</a>
+    <a class="l3" href="#G2-1">G2-1 Feed_Engagement_and_Studs</a><a class="l2" href="#G3">G3 US_Search_NonBrand_ColoredLGD</a>
+    <a class="l3" href="#G3-1">G3-1 Yellow and Pink LGD</a>
+  <a href="#testing">4. 测试与优化</a>
+  <a href="#timeline">5. 上线排期</a>
+  <a href="#risks">6. 风险与审核</a>
+  <div class="sub">附录</div>
+  <a href="#calcs">计算说明</a><a href="#gaps">数据缺失与假设</a>
+  <a href="#sources">引用证据（16）</a><a href="#verify">校验结果</a>
+  <div class="sub"><a href="index.html">← 方案总览</a><br><a href="../../report.html">← 市场调研报告</a></div>
+</nav>
+<main>
+<h1>Google Ads 推广方案：美国 · 人造钻石（月预算 $2,000）</h1>
+<div class="meta">产品：lab grown diamond / 人造钻石 · 市场：US · 平台：Google Ads · run：20261103-us-lab-grown-diamond-3 · 渲染：2026-11-04T08:09:09Z<br>
+<span class="badge ok">校验通过：数字 119/119，文案规格无错误</span>
+
+<span class="badge">广告系列 3 · 广告组 5 · 广告 5</span></div>
+
+
+
+
+<h2 id="summary">核心要点</h2>
+<table><tr><th style="width:130px">维度</th><th>结论</th></tr><tr><td><b>平台角色</b></td><td>Google 是唯一投放平台，专门收割购买意图明确的搜索；行业基准 CVR 4.50% <span class="cites"><a class="cite" href="sources.html#ev-E40" target="_blank" title="US google_search CVR 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：4.50%（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E40</a></span>，CPC $4.44 <span class="cites"><a class="cite" href="sources.html#ev-E36" target="_blank" title="US google_search CPC 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：$4.44（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E36</a></span>（proxy 品类，非实测）</td></tr><tr><td><b>预算</b></td><td>月 $2,000、日 $65.79 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG2" title="google 日预算：2,000.00 ÷ 30.4">CG2</a></span>；搜索非品牌词 $1,300/月（$42.76/天）<span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG3" title="广告系列 G1 预算：2,000.00 × 65%，日 = 月 ÷ 30.4">CG3</a></span>，购物广告 $700/月（$23.03/天）<span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG4" title="广告系列 G2 预算：2,000.00 × 35%，日 = 月 ÷ 30.4">CG4</a></span></td></tr><tr><td><b>结构</b></td><td>第一阶段 2 个广告系列、4 个广告组：椭圆订婚戒、培育钻订婚戒通用词、LGD 耳钉 + 标准购物广告；彩钻搜索放第二阶段</td></tr><tr><td><b>预估</b></td><td>约 450 次点击/月 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG5" title="月点击数（按 CPC）：2,000.00 ÷ CPC 4.44">CG5</a></span>；保守情景订单 13 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC6" title="保守情景 月订单数：点击 × CVR 2.78%">CGC6</a></span>、CPA $160 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC7" title="保守情景 CPA：2,000.00 ÷ 订单数">CGC7</a></span>；基准情景订单 20 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG6" title="月订单数：点击 × CVR 4.50%">CG6</a></span>、CPA $98.67 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG7" title="CPA：2,000.00 ÷ 订单数">CG7</a></span></td></tr><tr><td><b>考核门槛</b></td><td>CPA ≤ 盈亏平衡 CPA $494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span>（按毛利率 50% <span class="cite sug" title="假设值（如用户未提供的总预算），可替换">假设</span> 计算，可替换）；ROAS 预估 10.0x <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG9" title="ROAS：销售额 ÷ 月预算">CG9</a></span> 明显偏高，不作为考核</td></tr><tr><td><b>核心打法</b></td><td>主推椭圆款（+350% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>），文案突出 IGI 证书 + 诚实定价 + 终身保修，每条都带 lab-grown 限定词（FTC <span class="cites"><a class="cite" href="sources.html#ev-E114" target="_blank" title="ftc.gov：The many facets of advertising diamonds with clarity | Federal Trade Commission 来源：ftc.gov · 2026-11-04T07:43:37Z">E114</a></span>）</td></tr></table>
+<p class="note">角标 <span class="cite">E12</span> 悬停看来源；<span class="cite sug">建议</span><span class="cite sug">假设</span> 是判断或可替换的假设值。投放文案（等宽字体）里不插角标：文案中的数字依据写在每条广告的“文案依据”或“需商家确认的条款”里。</p>
+
+<h2 id="overview">1. 平台定位、预算与 KPI</h2>
+  
+  <p>预算只有 $2,000/月 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG1" title="google 月预算：总预算 2000 × 100%">CG1</a></span>，按 CPC $4.44 <span class="cites"><a class="cite" href="sources.html#ev-E36" target="_blank" title="US google_search CPC 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：$4.44（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E36</a></span> 算，一个月只有约 450 次点击 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG5" title="月点击数（按 CPC）：2,000.00 ÷ CPC 4.44">CG5</a></span>。所以只开 2 个系列，把点击集中在需求最强的订婚戒和增速最快的耳钉上；品牌词、彩钻、PMax、YouTube 都放到数据跑通之后。</p>
+  
+
+  <h3>预算与 KPI 预估（基准情景，CVR 4.50% proxy）</h3>
+  <table><tr><th>指标</th><th>预估</th></tr><tr><td>平台月预算</td><td>$2,000 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG1" title="google 月预算：总预算 2000 × 100%">CG1</a></span></td></tr><tr><td>平台日预算</td><td>$65.79 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG2" title="google 日预算：2,000.00 ÷ 30.4">CG2</a></span></td></tr><tr><td>G1 搜索非品牌词</td><td>$1,300/月（$42.76/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG3" title="广告系列 G1 预算：2,000.00 × 65%，日 = 月 ÷ 30.4">CG3</a></span></td></tr><tr><td>G2 标准购物广告</td><td>$700/月（$23.03/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG4" title="广告系列 G2 预算：2,000.00 × 35%，日 = 月 ÷ 30.4">CG4</a></span></td></tr><tr><td>预估点击 / 月</td><td>450 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG5" title="月点击数（按 CPC）：2,000.00 ÷ CPC 4.44">CG5</a></span></td></tr><tr><td>预估订单 / 月</td><td>20 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG6" title="月订单数：点击 × CVR 4.50%">CG6</a></span></td></tr><tr><td>预估 CPA</td><td>$98.67 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG7" title="CPA：2,000.00 ÷ 订单数">CG7</a></span></td></tr><tr><td>预估销售额 / 月</td><td>$20,047 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG8" title="月销售额：订单 × 客单价 989">CG8</a></span></td></tr><tr><td>预估 ROAS</td><td>10.0x <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG9" title="ROAS：销售额 ÷ 月预算">CG9</a></span></td></tr><tr><td>盈亏平衡 CPA</td><td>$494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span></td></tr></table>
+  
+
+  <h3>保守情景（CVR 2.78%，服饰配件 proxy [E42]）</h3>
+  <table><tr><th>指标</th><th>预估</th></tr><tr><td>预估点击 / 月</td><td>450 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC5" title="保守情景 月点击数：2,000.00 ÷ CPC 4.44">CGC5</a></span></td></tr><tr><td>预估订单 / 月</td><td>13 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC6" title="保守情景 月订单数：点击 × CVR 2.78%">CGC6</a></span></td></tr><tr><td>预估 CPA</td><td>$160 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC7" title="保守情景 CPA：2,000.00 ÷ 订单数">CGC7</a></span></td></tr><tr><td>预估销售额 / 月</td><td>$12,385 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC8" title="保守情景 月销售额：订单 × 客单价 989">CGC8</a></span></td></tr><tr><td>预估 ROAS</td><td>6.2x <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CGC9" title="保守情景 ROAS：销售额 ÷ 月预算">CGC9</a></span></td></tr></table>
+  
+
+  
+  <div class="callout warn">预估都来自行业基准（proxy 品类），不是承诺。客单价用竞品成品戒指中位数 $989 <span class="cites"><a class="cite" href="sources.html#ev-E143" target="_blank" title="renaissancejewel.com（Shopify，USD）公开商品 1000+ 个，价格 P25 $989 / 中位数 $1209 / P75 $1249（最低 $89，最高 $2929）；商品多为近期同步的库存（如裸钻），上新数不反映新品节奏；成品首饰 596 个，P25 $989 / 中位数 $1089 / P75 $1249（最低 $89）；品类：戒指 591 个中位 $989，戒托（不含主石） 404 个中位 $1209，耳饰 5 个中位 $1189 来源：renaissancejewel.com · 2026-11-04T07:45:07Z">E143</a></span>；订婚戒的高客单、长决策周期会让真实 CVR 明显低于基准，首月请用加购成本和 CPA 判断，不用 ROAS。</div>
+  
+
+<h2 id="setup">2. 账户与追踪准备</h2>
+  <h3>转化与追踪</h3>
+  <ul><li>GA4 + Google Ads 转化标签：Purchase（主要转化，传订单金额）、Begin checkout、Add to cart（次要转化）</li><li>开启增强型转化（Enhanced Conversions），并按同意模式（Consent Mode）处理加州等地的隐私告知</li><li>订单少的阶段，把 Add to cart 设为次要转化观察，不参与出价</li></ul>
+  
+
+  <h3>Merchant Center 商品源</h3>
+  <ul><li>商品标题统一以 “Lab-Grown Diamond” 开头，写清形状、克拉、金属，例如 Oval Lab-Grown Diamond Engagement Ring（FTC 要求标注 <span class="cites"><a class="cite" href="sources.html#ev-E114" target="_blank" title="ftc.gov：The many facets of advertising diamonds with clarity | Federal Trade Commission 来源：ftc.gov · 2026-11-04T07:43:37Z">E114</a></span>）</li><li>填写 GTIN 不适用时设 identifier_exists=no；product_type 按 订婚戒 / 耳钉 / 项链 分层，方便购物广告分组</li><li>custom_label_0 标主推款（椭圆、耳钉），custom_label_1 标价格档</li><li>配置运费和退货政策，与落地页一致；页面写明含税、无额外进口费用（de minimis 已暂停 <span class="cites"><a class="cite" href="sources.html#ev-E120" target="_blank" title="carraglobe.com：US De Minimis Exemption Suspended 2026: What Every Importer and E-Commerce Seller Must Do Now - Carra Globe 来源：carraglobe.com · 2026-11-04T07:44:01Z">E120</a></span>）</li></ul>
+  
+
+  <h3>受众列表（观察模式）</h3>
+  <ul><li>网站访客 30 天 / 加购未购 30 天（RLSA 观察，不做定向）</li><li>客户邮件名单（Customer Match，有名单后再上传）</li><li>账户级否定：竞品品牌词、招聘、批发、DIY 等（见各系列否定词）</li></ul>
+  
+
+
+<h2 id="structure">3. 账户结构：广告系列 → 广告组 → 广告</h2>
+<div class="callout warn">文案规则：
+每条广告必须出现 <b>lab-grown / lab grown / lab-created / lab created</b> 之一；
+禁用词：<span class="neg">investment, resale value, mined, natural diamond, real diamond, genuine diamond, moissanite, flawless</span></div>
+<table><tr><th>广告系列</th><th>类型 / 目标</th><th>预算</th><th>广告组</th><th>广告</th></tr>
+<tr><td><a href="#G1">G1</a> US_Search_NonBrand_LGD</td><td>Search / Sales</td><td>$1,300/月（$42.76/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG3" title="广告系列 G1 预算：2,000.00 × 65%，日 = 月 ÷ 30.4">CG3</a></span></td>
+<td><a href="#G1-1">G1-1</a> Oval Engagement Rings<br><a href="#G1-2">G1-2</a> LGD Engagement Rings Generic<br><a href="#G1-3">G1-3</a> LGD Stud Earrings<br></td><td>3</td></tr><tr><td><a href="#G2">G2</a> US_Shopping_Standard_LGD</td><td>Shopping / Sales</td><td>$700/月（$23.03/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG4" title="广告系列 G2 预算：2,000.00 × 35%，日 = 月 ÷ 30.4">CG4</a></span></td>
+<td><a href="#G2-1">G2-1</a> Feed_Engagement_and_Studs<br></td><td>1</td></tr><tr><td><a href="#G3">G3</a> US_Search_NonBrand_ColoredLGD</td><td>Search / Sales</td><td>从 G1 调拨 $300/月左右 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>；开启条件：G1 连续 4 周 CPA ≤ $494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span>，且已上架黄钻/粉钻商品</td>
+<td><a href="#G3-1">G3-1</a> Yellow and Pink LGD<br></td><td>1</td></tr></table>
+
+
+<div class="camp" id="G1">
+<h3>广告系列 G1：US_Search_NonBrand_LGD<span class="tag">Search</span><span class="tag">Sales</span></h3>
+<table>
+<tr><td class="k">预算</td><td>$1,300/月（$42.76/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG3" title="广告系列 G1 预算：2,000.00 × 65%，日 = 月 ÷ 30.4">CG3</a></span></td></tr>
+<tr><td class="k">出价</td><td>前 2–4 周用 Maximize Clicks，CPC 上限 $6 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>（依据基准 CPC $4.44 <span class="cites"><a class="cite" href="sources.html#ev-E36" target="_blank" title="US google_search CPC 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：$4.44（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E36</a></span>）；累计约 15–20 个购买转化 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span> 后切 Maximize Conversions，再稳定后设 tCPA，目标不高于盈亏平衡 CPA $494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span></td></tr>
+<tr><td class="k">排期</td><td>全天投放；首月观察时段报表后再降低凌晨出价</td></tr>
+<tr><td class="k">为什么</td><td>搜索 CVR 4.50% <span class="cites"><a class="cite" href="sources.html#ev-E40" target="_blank" title="US google_search CVR 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：4.50%（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E40</a></span> 是三个平台里最高的，最适合收割“engagement ring / oval / studs”这类意图明确的词；订婚戒热门指数 52 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>，耳钉 +190% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>。</td></tr>
+<tr><td class="k">地区</td><td>美国全国（按所在地，不按兴趣） </td></tr><tr><td class="k">语言</td><td>English </td></tr><tr><td class="k">网络</td><td>仅搜索网络（关闭搜索网络合作伙伴和展示网络） </td></tr><tr><td class="k">设备</td><td>不限，观察移动端转化后再调整 </td></tr>
+<tr><td class="k">系列否定词</td><td class="neg">moissanite, cubic zirconia, cz, fake, simulated, free, jobs, career, wholesale, diy, how to make, rental, used, pawn, resale, machine, industrial, mined, natural diamond, brilliant earth, blue nile, pandora, kay, zales, jared, helzberg</td></tr>
+</table>
+
+<div class="grp" id="G1-1">
+<h4>广告组 G1-1：Oval Engagement Rings</h4>
+<table>
+<tr><td class="k">为什么</td><td>椭圆订婚戒是增速最高的订婚戒方向（+350% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>），主力利润款（报告第 5 章，优先级 5）</td></tr>
+
+
+
+
+
+<tr><td class="k">否定关键词</td><td class="neg">earrings, studs, necklace, bracelet, loose</td></tr>
+</table>
+<table><tr><th>关键词</th><th style="width:70px">匹配</th><th>依据</th></tr>
+<tr><td class="kw">[oval lab grown diamond engagement ring]</td><td>exact</td><td>rising +350% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;oval lab grown diamond engagement ring&#34;</td><td>phrase</td><td>rising +350% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;oval lab grown diamond ring&#34;</td><td>phrase</td><td>椭圆 +350% 的变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;oval lab diamond engagement ring&#34;</td><td>phrase</td><td>lab diamond 是常见简称，lab diamond rings 指数 21 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown oval engagement ring&#34;</td><td>phrase</td><td>词序变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;oval lab created diamond ring&#34;</td><td>phrase</td><td>lab created 是核心词之一 <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;2 carat oval lab grown diamond ring&#34;</td><td>phrase</td><td>lab grown 2 carat diamond 指数 15 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;1 carat oval lab grown diamond&#34;</td><td>phrase</td><td>1 carat lab grown diamond +60% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">[oval lab grown diamond]</td><td>exact</td><td>椭圆主题 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>；话题 Oval 指数 5 <span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr><tr><td class="kw">&#34;oval engagement ring lab grown&#34;</td><td>phrase</td><td>词序变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;igi certified oval lab grown diamond&#34;</td><td>phrase</td><td>IGI 话题 +2,100% <span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr></table>
+
+<div class="ad" id="G1-1-A">
+<h5>广告 G1-1-A：RSA_Oval_Certified_HonestPrice<span class="tag">rsa</span></h5>
+
+<div class="copy"><div class="fn">headlines（上限 30 字符）</div>
+<ol><li>Oval Lab-Grown Diamond Rings<span class="len ">28</span></li><li>IGI Certified Lab-Grown<span class="len ">23</span></li><li>Shop Oval Engagement Rings<span class="len ">26</span></li><li>Lab-Grown Oval Diamonds<span class="len ">23</span></li><li>Free Shipping &amp; Returns<span class="len ">23</span></li><li>Lifetime Warranty Included<span class="len ">26</span></li><li>Honest Pricing, No Gimmicks<span class="len ">27</span></li><li>Ready-to-Ship Oval Rings<span class="len ">24</span></li><li>Design Your Oval Ring<span class="len ">21</span></li><li>Certificate With Every Stone<span class="len ">28</span></li><li>Gold &amp; Platinum Settings<span class="len ">24</span></li><li>Oval Lab-Grown Engagement<span class="len ">25</span></li><li>0% APR Financing Available<span class="len ">26</span></li><li>Compare Certified Stones<span class="len ">24</span></li><li>Find Your Perfect Oval<span class="len ">22</span></li></ol></div><div class="copy"><div class="fn">descriptions（上限 90 字符）</div>
+<ol><li>Oval lab-grown diamond engagement rings with IGI certificates. Shop ready-to-ship.<span class="len ">82</span></li><li>One honest price, no fake markdowns. Free shipping, free returns, lifetime warranty.<span class="len ">84</span></li><li>Choose your oval lab-grown diamond and setting, or design a custom ring with us.<span class="len ">80</span></li><li>Every lab-grown diamond comes with an IGI report. Check it online before you buy.<span class="len ">81</span></li></ol></div><div class="copy"><div class="fn">display_path（上限 15 字符）</div>
+<ol><li>engagement<span class="len ">10</span></li><li>oval<span class="len ">4</span></li></ol></div><div class="copy"><div class="fn">callouts（上限 25 字符）</div>
+<ol><li>IGI Certified<span class="len ">13</span></li><li>Free Shipping<span class="len ">13</span></li><li>Free 30-Day Returns<span class="len ">19</span></li><li>Lifetime Warranty<span class="len ">17</span></li><li>Ready to Ship<span class="len ">13</span></li><li>Custom Designs<span class="len ">14</span></li></ol></div>
+<div class="copy"><div class="fn">sitelinks</div><table>
+<tr><th>文字</th><th>描述</th><th>URL</th></tr><tr><td class="kw">Oval Engagement Rings<span class="len ">21</span></td>
+<td class="kw">Certified lab-grown oval stones<span class="len ">31</span><br>Solitaire, halo and hidden halo<span class="len ">31</span><br></td><td>/engagement-rings/oval</td></tr><tr><td class="kw">Ready to Ship<span class="len ">13</span></td>
+<td class="kw">Lab-grown rings ready to go<span class="len ">27</span><br>Ships fast with tracking<span class="len ">24</span><br></td><td>/engagement-rings/ready-to-ship</td></tr><tr><td class="kw">Design Your Own Ring<span class="len ">20</span></td>
+<td class="kw">Pick a lab-grown stone<span class="len ">22</span><br>Then choose your setting<span class="len ">24</span><br></td><td>/custom</td></tr><tr><td class="kw">Lab-Grown Diamond Guide<span class="len ">23</span></td>
+<td class="kw">How lab-grown is made<span class="len ">21</span><br>How to read an IGI report<span class="len ">25</span><br></td><td>/education/lab-grown-diamonds</td></tr></table></div>
+<table>
+<tr><td class="k">落地页</td><td>/engagement-rings/oval</td></tr>
+
+
+
+
+<tr><td class="k">文案依据</td><td><span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr>
+<tr><td class="k">需商家确认的条款</td><td>0% APR financing；Free 30-day returns；Free shipping；Lifetime warranty</td></tr>
+<tr><td class="k">备注</td><td>教育页可对比仿品，但广告文案不出现仿品名。“Honest Pricing” 需要长期价格一致，不做虚高划线价（FTC 16 CFR Part 233）。</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="grp" id="G1-2">
+<h4>广告组 G1-2：LGD Engagement Rings Generic</h4>
+<table>
+<tr><td class="k">为什么</td><td>lab grown diamond engagement ring 热门指数 52、+170% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>，lab grown diamond ring 指数 100 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>；承接不限定形状的订婚戒需求</td></tr>
+
+
+
+
+
+<tr><td class="k">否定关键词</td><td class="neg">oval, earrings, studs, necklace, bracelet, loose, men&#39;s</td></tr>
+</table>
+<table><tr><th>关键词</th><th style="width:70px">匹配</th><th>依据</th></tr>
+<tr><td class="kw">[lab grown diamond engagement ring]</td><td>exact</td><td>热门 52、+170% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond engagement rings&#34;</td><td>phrase</td><td>热门 52 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown engagement ring&#34;</td><td>phrase</td><td>核心词（brief）<span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;lab created diamond engagement ring&#34;</td><td>phrase</td><td>核心词 lab created diamond <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;lab diamond engagement ring&#34;</td><td>phrase</td><td>lab diamond rings 指数 21 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond ring&#34;</td><td>phrase</td><td>热门 100、+60% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;buy lab grown diamond engagement ring&#34;</td><td>phrase</td><td>购买意图修饰词 <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;1 carat lab grown diamond engagement ring&#34;</td><td>phrase</td><td>1 carat lab grown diamond +60% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;2 carat lab grown diamond ring&#34;</td><td>phrase</td><td>lab grown 2 carat diamond 指数 15 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;igi certified lab grown diamond ring&#34;</td><td>phrase</td><td>IGI +2,100% <span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond solitaire ring&#34;</td><td>phrase</td><td>订婚戒常见款式 <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;marquise lab grown diamond ring&#34;</td><td>phrase</td><td>marquise +120% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr></table>
+
+<div class="ad" id="G1-2-A">
+<h5>广告 G1-2-A：RSA_Engagement_Certified<span class="tag">rsa</span></h5>
+
+<div class="copy"><div class="fn">headlines（上限 30 字符）</div>
+<ol><li>Lab-Grown Engagement Rings<span class="len ">26</span></li><li>IGI Certified Lab-Grown<span class="len ">23</span></li><li>Lab-Grown Diamond Rings<span class="len ">23</span></li><li>Free Shipping &amp; Returns<span class="len ">23</span></li><li>Lifetime Warranty Included<span class="len ">26</span></li><li>One Honest Price<span class="len ">16</span></li><li>Shop by Shape &amp; Setting<span class="len ">23</span></li><li>Ready-to-Ship Rings<span class="len ">19</span></li><li>Design Your Dream Ring<span class="len ">22</span></li><li>Certificate With Every Stone<span class="len ">28</span></li><li>Lab-Grown, Graded by IGI<span class="len ">24</span></li><li>0% APR Financing Available<span class="len ">26</span></li><li>Solitaire, Halo &amp; More<span class="len ">22</span></li><li>Gold &amp; Platinum Settings<span class="len ">24</span></li></ol></div><div class="copy"><div class="fn">descriptions（上限 90 字符）</div>
+<ol><li>Lab-grown diamond engagement rings, each with an IGI certificate. Shop by shape.<span class="len ">80</span></li><li>No fake markdowns. One honest price with free shipping, returns and lifetime warranty.<span class="len ">86</span></li><li>Round, oval, marquise and more. Pick a lab-grown diamond, then choose your setting.<span class="len ">83</span></li><li>Check every lab-grown diamond report online. Ready-to-ship and custom rings available.<span class="len ">86</span></li></ol></div><div class="copy"><div class="fn">display_path（上限 15 字符）</div>
+<ol><li>engagement<span class="len ">10</span></li><li>lab-grown<span class="len ">9</span></li></ol></div><div class="copy"><div class="fn">callouts（上限 25 字符）</div>
+<ol><li>IGI Certified<span class="len ">13</span></li><li>Free Shipping<span class="len ">13</span></li><li>Free 30-Day Returns<span class="len ">19</span></li><li>Lifetime Warranty<span class="len ">17</span></li><li>0% APR Financing<span class="len ">16</span></li></ol></div>
+<div class="copy"><div class="fn">sitelinks</div><table>
+<tr><th>文字</th><th>描述</th><th>URL</th></tr><tr><td class="kw">Shop by Shape<span class="len ">13</span></td>
+<td class="kw">Oval, round, marquise and more<span class="len ">30</span><br>All stones lab-grown, certified<span class="len ">31</span><br></td><td>/engagement-rings</td></tr><tr><td class="kw">Ready to Ship<span class="len ">13</span></td>
+<td class="kw">Lab-grown rings ready to go<span class="len ">27</span><br>Ships fast with tracking<span class="len ">24</span><br></td><td>/engagement-rings/ready-to-ship</td></tr><tr><td class="kw">Design Your Own Ring<span class="len ">20</span></td>
+<td class="kw">Pick a lab-grown stone<span class="len ">22</span><br>Then choose your setting<span class="len ">24</span><br></td><td>/custom</td></tr><tr><td class="kw">Wedding Bands<span class="len ">13</span></td>
+<td class="kw">Match your lab-grown ring<span class="len ">25</span><br>Gold and platinum bands<span class="len ">23</span><br></td><td>/wedding-bands</td></tr></table></div>
+<table>
+<tr><td class="k">落地页</td><td>/engagement-rings</td></tr>
+
+
+
+
+<tr><td class="k">文案依据</td><td><span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr>
+<tr><td class="k">需商家确认的条款</td><td>0% APR financing；Free 30-day returns；Free shipping；Lifetime warranty</td></tr>
+
+</table>
+</div>
+
+</div>
+
+<div class="grp" id="G1-3">
+<h4>广告组 G1-3：LGD Stud Earrings</h4>
+<table>
+<tr><td class="k">为什么</td><td>LGD stud earrings +190% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>，话题 Lab Grown Diamond Earrings Breakout <span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span>；入门/礼品款，购物结果耳钉中位 $297.5 <span class="cites"><a class="cite" href="sources.html#ev-E136" target="_blank" title="Google(us) &#x27;lab grown diamond stud earrings&#x27;：自然结果 7 条、广告 2 条、购物 60 条；购物结果价格 60 个，P25 $191.25 / 中位数 $297.5 / P75 $577.5（最低 $49.99） 来源：google.com · 2026-11-04T07:44:50Z">E136</a></span>；客单低，CPA 需单独看</td></tr>
+
+
+
+
+
+<tr><td class="k">否定关键词</td><td class="neg">engagement, ring, necklace, bracelet, men&#39;s, hoop</td></tr>
+</table>
+<table><tr><th>关键词</th><th style="width:70px">匹配</th><th>依据</th></tr>
+<tr><td class="kw">[lab grown diamond stud earrings]</td><td>exact</td><td>+190% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond stud earrings&#34;</td><td>phrase</td><td>+190% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond earrings&#34;</td><td>phrase</td><td>热门 27 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab diamond earrings&#34;</td><td>phrase</td><td>热门 27 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond studs&#34;</td><td>phrase</td><td>+190% 的变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab created diamond earrings&#34;</td><td>phrase</td><td>核心词变体 <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;1 carat lab grown diamond earrings&#34;</td><td>phrase</td><td>1 carat +60% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown diamond earrings gift&#34;</td><td>phrase</td><td>礼品场景（母亲节、圣诞）<span class="cite sug" title="推断，没有直接数据">推断</span></td></tr><tr><td class="kw">&#34;14k lab grown diamond studs&#34;</td><td>phrase</td><td>话题 14k Breakout <span class="cites"><a class="cite" href="sources.html#ev-E5" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24 来源：trends.google.com · 2026-11-04T07:42:44Z">E5</a></span></td></tr></table>
+
+<div class="ad" id="G1-3-A">
+<h5>广告 G1-3-A：RSA_Studs_Gift<span class="tag">rsa</span></h5>
+
+<div class="copy"><div class="fn">headlines（上限 30 字符）</div>
+<ol><li>Lab-Grown Diamond Studs<span class="len ">23</span></li><li>Lab-Grown Stud Earrings<span class="len ">23</span></li><li>IGI Certified Lab-Grown<span class="len ">23</span></li><li>A Gift She&#x27;ll Wear Daily<span class="len ">24</span></li><li>Free Shipping &amp; Returns<span class="len ">23</span></li><li>Lifetime Warranty Included<span class="len ">26</span></li><li>14K Gold Settings<span class="len ">17</span></li><li>Gift-Ready Packaging<span class="len ">20</span></li><li>Shop Lab-Grown Earrings<span class="len ">23</span></li><li>Classic Four-Prong Studs<span class="len ">24</span></li><li>One Honest Price<span class="len ">16</span></li></ol></div><div class="copy"><div class="fn">descriptions（上限 90 字符）</div>
+<ol><li>Classic lab-grown diamond stud earrings in 14K gold. Gift-ready with free shipping.<span class="len ">83</span></li><li>Every pair of lab-grown diamond studs comes with a lifetime warranty and free returns.<span class="len ">86</span></li><li>Choose carat weight and metal. Lab-grown, certified and priced honestly.<span class="len ">72</span></li><li>Holiday gift idea: lab-grown diamond studs, shipped fast in a gift box.<span class="len ">71</span></li></ol></div><div class="copy"><div class="fn">display_path（上限 15 字符）</div>
+<ol><li>earrings<span class="len ">8</span></li><li>studs<span class="len ">5</span></li></ol></div><div class="copy"><div class="fn">callouts（上限 25 字符）</div>
+<ol><li>Free Shipping<span class="len ">13</span></li><li>Free 30-Day Returns<span class="len ">19</span></li><li>Lifetime Warranty<span class="len ">17</span></li><li>Gift Box Included<span class="len ">17</span></li></ol></div>
+<div class="copy"><div class="fn">sitelinks</div><table>
+<tr><th>文字</th><th>描述</th><th>URL</th></tr><tr><td class="kw">Stud Earrings<span class="len ">13</span></td>
+<td class="kw">Lab-grown studs in 14K gold<span class="len ">27</span><br>Choose your carat weight<span class="len ">24</span><br></td><td>/earrings/studs</td></tr><tr><td class="kw">Gifts for Her<span class="len ">13</span></td>
+<td class="kw">Lab-grown earrings and pendants<span class="len ">31</span><br>Gift-ready packaging<span class="len ">20</span><br></td><td>/gifts</td></tr><tr><td class="kw">Pendants &amp; Necklaces<span class="len ">20</span></td>
+<td class="kw">Lab-grown diamond pendants<span class="len ">26</span><br>Gold and platinum chains<span class="len ">24</span><br></td><td>/necklaces</td></tr><tr><td class="kw">Tennis Bracelets<span class="len ">16</span></td>
+<td class="kw">Lab-grown tennis bracelets<span class="len ">26</span><br>Classic and stackable styles<span class="len ">28</span><br></td><td>/bracelets/tennis</td></tr></table></div>
+<table>
+<tr><td class="k">落地页</td><td>/earrings/studs</td></tr>
+
+
+
+
+
+<tr><td class="k">需商家确认的条款</td><td>14K gold settings；Free 30-day returns；Free shipping；Lifetime warranty；Gift box included</td></tr>
+
+</table>
+</div>
+
+</div>
+
+</div>
+
+<div class="camp" id="G2">
+<h3>广告系列 G2：US_Shopping_Standard_LGD<span class="tag">Shopping</span><span class="tag">Sales</span></h3>
+<table>
+<tr><td class="k">预算</td><td>$700/月（$23.03/天） <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG4" title="广告系列 G2 预算：2,000.00 × 35%，日 = 月 ÷ 30.4">CG4</a></span></td></tr>
+<tr><td class="k">出价</td><td>先用 Manual CPC（可开启 eCPC 观察），起始 CPC $1.00–1.50 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>（Shopping 基准 CPC $0.69 为 2018–19 年旧数据 <span class="cites"><a class="cite" href="sources.html#ev-E37" target="_blank" title="US google_shopping CPC 行业基准（clothing_apparel(proxy)，proxy，非实测，数据较旧）：$0.69（2018-08~2019-02），来源 WordStream Google Shopping Ads Benchmarks 来源：wordstream.com · 2026-11-04T07:42:44Z">E37</a></span>，需上调后按实际调整）；每月累计约 15 个购买 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span> 后再考虑 Maximize Conversions</td></tr>
+
+<tr><td class="k">为什么</td><td>购物卡片里卖家以 Brilliant Earth、Kay、Macy&#x27;s 等为主 <span class="cites"><a class="cite" href="sources.html#ev-E134" target="_blank" title="Google(us) &#x27;lab grown diamond engagement ring&#x27;：自然结果 8 条、广告 0 条、购物 30 条；购物结果价格 30 个，P25 $1120 / 中位数 $2349.5 / P75 $3489（最低 $297.5） 来源：google.com · 2026-11-04T07:44:50Z">E134</a></span>，图片 + 价格直接比价；预算小，用可控的标准购物广告代替 PMax（PMax 预算低时学习慢、流量不可控）。</td></tr>
+<tr><td class="k">地区</td><td>美国全国 </td></tr><tr><td class="k">商品范围</td><td>订婚戒 + 耳钉（custom_label_0 = 主推） </td></tr><tr><td class="k">网络</td><td>仅 Google 搜索（关闭搜索合作伙伴） </td></tr><tr><td class="k">优先级</td><td>中 </td></tr>
+<tr><td class="k">系列否定词</td><td class="neg">moissanite, cubic zirconia, cz, fake, simulated, cheap, wholesale, used, mined, natural diamond</td></tr>
+</table>
+
+<div class="grp" id="G2-1">
+<h4>广告组 G2-1：Feed_Engagement_and_Studs</h4>
+<table>
+<tr><td class="k">为什么</td><td>按 product_type 分组：订婚戒（购物结果中位 $2,349.5 <span class="cites"><a class="cite" href="sources.html#ev-E134" target="_blank" title="Google(us) &#x27;lab grown diamond engagement ring&#x27;：自然结果 8 条、广告 0 条、购物 30 条；购物结果价格 30 个，P25 $1120 / 中位数 $2349.5 / P75 $3489（最低 $297.5） 来源：google.com · 2026-11-04T07:44:50Z">E134</a></span>）出价高一档，耳钉（中位 $297.5 <span class="cites"><a class="cite" href="sources.html#ev-E136" target="_blank" title="Google(us) &#x27;lab grown diamond stud earrings&#x27;：自然结果 7 条、广告 2 条、购物 60 条；购物结果价格 60 个，P25 $191.25 / 中位数 $297.5 / P75 $577.5（最低 $49.99） 来源：google.com · 2026-11-04T07:44:50Z">E136</a></span>）出价低一档 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span></td></tr>
+
+
+
+
+
+
+</table>
+
+
+<div class="ad" id="G2-1-A">
+<h5>广告 G2-1-A：Shopping_FeedTitles<span class="tag">shopping</span></h5>
+
+<div class="copy"><div class="fn">descriptions</div>
+<ol><li>Oval Lab-Grown Diamond Engagement Ring, IGI Certified, 14K Yellow Gold<span class="len ">70</span></li><li>Round Lab-Grown Diamond Solitaire Engagement Ring, IGI Certified, Platinum<span class="len ">74</span></li><li>Lab-Grown Diamond Stud Earrings, Four-Prong, 14K White Gold<span class="len ">59</span></li></ol></div>
+
+<table>
+<tr><td class="k">落地页</td><td>/engagement-rings</td></tr>
+<tr><td class="k">素材说明</td><td>商品主图白底、戒指斜侧角度，第二张为上手图；标题以 Lab-Grown Diamond 开头，写清形状、证书、金属；价格与落地页一致，不用虚高原价。</td></tr>
+
+
+
+
+<tr><td class="k">需商家确认的条款</td><td>14K gold settings</td></tr>
+<tr><td class="k">备注</td><td>descriptions 这里填的是 Merchant Center 商品标题示例，不是广告文案。</td></tr>
+</table>
+</div>
+
+</div>
+
+</div>
+
+<div class="camp" id="G3">
+<h3>广告系列 G3：US_Search_NonBrand_ColoredLGD<span class="tag">Search</span><span class="tag">Sales</span></h3>
+<table>
+<tr><td class="k">预算</td><td>从 G1 调拨 $300/月左右 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>；开启条件：G1 连续 4 周 CPA ≤ $494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span>，且已上架黄钻/粉钻商品</td></tr>
+<tr><td class="k">出价</td><td>Maximize Clicks，CPC 上限 $5 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>，依据 <span class="cites"><a class="cite" href="sources.html#ev-E36" target="_blank" title="US google_search CPC 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：$4.44（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026 来源：wordstream.com · 2026-11-04T07:42:44Z">E36</a></span></td></tr>
+
+<tr><td class="k">为什么</td><td>黄钻 +400%、粉钻 +250% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span>，Meta 竞品样本里几乎没人主推彩钻 <span class="cites"><a class="cite" href="sources.html#ev-E45" target="_blank" title="Meta 广告资料库 &#x27;lab grown diamond&#x27;（US，active，取前 50 条）：样本 50 条广告、26 个广告主，其中 17 个已投放 ≥90 天；形式 VIDEO×23, DPA×17, DCO×8, CAROUSEL×1, IMAGE×1 来源：facebook.com · 2026-11-04T07:42:56Z">E45</a></span>，是差异化机会；但缺同品类价格数据，先等主线跑通。</td></tr>
+<tr><td class="k">地区</td><td>美国全国 </td></tr><tr><td class="k">语言</td><td>English </td></tr><tr><td class="k">网络</td><td>仅搜索网络 </td></tr>
+<tr><td class="k">系列否定词</td><td class="neg">moissanite, cubic zirconia, sapphire, citrine, topaz, fake, natural diamond</td></tr>
+</table>
+
+<div class="grp" id="G3-1">
+<h4>广告组 G3-1：Yellow and Pink LGD</h4>
+<table>
+<tr><td class="k">为什么</td><td>彩钻飙升词 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr>
+
+
+
+
+
+
+</table>
+<table><tr><th>关键词</th><th style="width:70px">匹配</th><th>依据</th></tr>
+<tr><td class="kw">&#34;lab grown yellow diamond&#34;</td><td>phrase</td><td>+400%，热门 26 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown yellow diamond ring&#34;</td><td>phrase</td><td>+400% 变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown pink diamond&#34;</td><td>phrase</td><td>+250% <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;lab grown pink diamond ring&#34;</td><td>phrase</td><td>+250% 变体 <span class="cites"><a class="cite" href="sources.html#ev-E4" target="_blank" title="US &#x27;lab grown diamond&#x27; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27 来源：trends.google.com · 2026-11-04T07:42:44Z">E4</a></span></td></tr><tr><td class="kw">&#34;fancy color lab grown diamond&#34;</td><td>phrase</td><td>彩钻通称 <span class="cite sug" title="推断，没有直接数据">推断</span></td></tr></table>
+
+<div class="ad" id="G3-1-A">
+<h5>广告 G3-1-A：RSA_ColoredLGD<span class="tag">rsa</span></h5>
+
+<div class="copy"><div class="fn">headlines（上限 30 字符）</div>
+<ol><li>Yellow Lab-Grown Diamonds<span class="len ">25</span></li><li>Pink Lab-Grown Diamonds<span class="len ">23</span></li><li>Lab-Grown Fancy Color Rings<span class="len ">27</span></li><li>IGI Certified Lab-Grown<span class="len ">23</span></li><li>Free Shipping &amp; Returns<span class="len ">23</span></li><li>Lifetime Warranty Included<span class="len ">26</span></li><li>Stand Out in Color<span class="len ">18</span></li></ol></div><div class="copy"><div class="fn">descriptions（上限 90 字符）</div>
+<ol><li>Yellow and pink lab-grown diamond rings, each with an IGI report. Shop the color edit.<span class="len ">86</span></li><li>Fancy color lab-grown diamonds in gold and platinum. Free shipping and free returns.<span class="len ">84</span></li></ol></div><div class="copy"><div class="fn">display_path（上限 15 字符）</div>
+<ol><li>lab-grown<span class="len ">9</span></li><li>colored<span class="len ">7</span></li></ol></div><div class="copy"><div class="fn">callouts（上限 25 字符）</div>
+<ol><li>IGI Certified<span class="len ">13</span></li><li>Free Shipping<span class="len ">13</span></li><li>Lifetime Warranty<span class="len ">17</span></li></ol></div>
+
+<table>
+<tr><td class="k">落地页</td><td>/colored-diamonds</td></tr>
+
+
+
+
+
+<tr><td class="k">需商家确认的条款</td><td>Free shipping；Lifetime warranty</td></tr>
+
+</table>
+</div>
+
+</div>
+
+</div>
+
+
+<h2 id="testing">4. 测试与优化</h2>
+  <h3>A/B 测试矩阵（每次只测一个变量）</h3>
+  <table><tr><th>周期</th><th>变量</th><th>做法</th><th>判定</th></tr><tr><td>第 1–4 周</td><td>RSA 标题主张</td><td>用固定（pin）标题 1 分别测“IGI Certified”与“One Honest Price”</td><td>点击率和加购率；每个版本至少 1,000 次展示 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span></td></tr><tr><td>第 3–6 周</td><td>落地页</td><td>椭圆分类页 vs 单品详情页</td><td>加购率、CPA</td></tr><tr><td>第 5–8 周</td><td>价格锚点</td><td>页面加“起步价”与“赠品机制”对比（参考 MiaDonna 送耳钉 <span class="cites"><a class="cite" href="sources.html#ev-E144" target="_blank" title="miadonna.com 首页：Shop Lab Grown Diamond Engagement Rings, Wedding Bands &amp; Fine Jewelry 来源：miadonna.com · 2026-11-04T07:45:21Z">E144</a></span>）</td><td>转化率、客单价</td></tr><tr><td>持续</td><td>关键词</td><td>每周看搜索字词报告，加否定词，把高转化长尾词提成 exact</td><td>CPA</td></tr></table>
+  
+
+  <h3>加减预算与关停规则</h3>
+  <ul><li>广告组花费超过 2 倍盈亏平衡 CPA（$988 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG11" title="关停阈值：盈亏平衡 CPA 494 × 2">CG11</a></span>）仍 0 单：暂停该组，预算移到表现最好的组</li><li>G1-3 耳钉组单独看：CPA 高于耳钉客单的一半（约 $149 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG12" title="耳钉组 CPA 上限（假设毛利 50%）：耳钉中位价 297.5 × 50% = 148.75，取整 $149">CG12</a></span>）时降价出价或暂停</li><li>某组 CPA 连续 2 周 ≤ $494 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG10" title="盈亏平衡 CPA：客单价 989 × 毛利率 50%（假设，可替换）">CG10</a></span> 且预算受限：在总预算内从弱组调拨 20% <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span></li><li>智能出价切换后学习期最长 7 天 <span class="cites"><a class="cite" href="sources.html#ev-E162" target="_blank" title="google 官方规格：智能出价“学习中”状态最长持续天数 = 7 days（&quot;Learning status never lasts more than 7 days&quot;；预算/目标/素材修改不会触发学习状态） 来源：support.google.com · 2026-11-04T08:06:20Z">E162</a></span>，期间不调预算和目标</li><li>关键词质量分低于 5 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>：重写广告或拆分广告组</li></ul>
+  
+
+<h2 id="timeline">5. 上线排期</h2>
+  
+  <table><tr><th>时间</th><th>重点</th><th>对齐主报告日历</th></tr><tr><td>第 1–2 周</td><td>搭账户、追踪、Merchant Center；G1 + G2 上线，Maximize Clicks 积累数据</td><td>11 月黑五为成交节点（全年预算 9% <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CB1" title="全年预算的月度分配（按搜索热度加权，节点系数为判断）：占比_m = max(月均指数_m × 节点系数_m, 15) / Σ × 100，取整后合计 100；节点系数：2 月 ×1.5、5 月 ×1.2、11 月 ×2.2、12 月 ×2.2；指数：1 月 16.8、2 月 23.2、3 月 28.2、4 月 78.8、5 月 58.2、6 月 44.8、7 月 19.2、8 月 18.2、9 月 20、10 月 18、11 月 18.6、12 月 23.2">CB1</a></span>）</td></tr><tr><td>第 3–4 周</td><td>清洗搜索字词、补否定词；标题 A/B；耳钉组发力圣诞礼品</td><td>12 月圣诞和跨年求婚（12% <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CB1" title="全年预算的月度分配（按搜索热度加权，节点系数为判断）：占比_m = max(月均指数_m × 节点系数_m, 15) / Σ × 100，取整后合计 100；节点系数：2 月 ×1.5、5 月 ×1.2、11 月 ×2.2、12 月 ×2.2；指数：1 月 16.8、2 月 23.2、3 月 28.2、4 月 78.8、5 月 58.2、6 月 44.8、7 月 19.2、8 月 18.2、9 月 20、10 月 18、11 月 18.6、12 月 23.2">CB1</a></span>）</td></tr><tr><td>第 2 个月</td><td>累计转化够了切 Maximize Conversions；表现好的组加预算</td><td>1 月淡季（4% <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CB1" title="全年预算的月度分配（按搜索热度加权，节点系数为判断）：占比_m = max(月均指数_m × 节点系数_m, 15) / Σ × 100，取整后合计 100；节点系数：2 月 ×1.5、5 月 ×1.2、11 月 ×2.2、12 月 ×2.2；指数：1 月 16.8、2 月 23.2、3 月 28.2、4 月 78.8、5 月 58.2、6 月 44.8、7 月 19.2、8 月 18.2、9 月 20、10 月 18、11 月 18.6、12 月 23.2">CB1</a></span>）可适当降预算，留到 4 月</td></tr><tr><td>第 3 个月</td><td>评估是否开启 G3 彩钻；准备 3–4 月求婚季</td><td>4 月搜索峰值（18% <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CB1" title="全年预算的月度分配（按搜索热度加权，节点系数为判断）：占比_m = max(月均指数_m × 节点系数_m, 15) / Σ × 100，取整后合计 100；节点系数：2 月 ×1.5、5 月 ×1.2、11 月 ×2.2、12 月 ×2.2；指数：1 月 16.8、2 月 23.2、3 月 28.2、4 月 78.8、5 月 58.2、6 月 44.8、7 月 19.2、8 月 18.2、9 月 20、10 月 18、11 月 18.6、12 月 23.2">CB1</a></span>）前 4–6 周加码订婚戒</td></tr></table>
+  <p class="note">用户预算固定为每月 $2,000 <span class="cites"><span class=calc-l>计算:</span><a class="cite calc" href="#calc-CG1" title="google 月预算：总预算 2000 × 100%">CG1</a></span>；如果后续允许按月浮动，建议参照主报告月度占比，把淡季预算挪到 4–5 月和 11–12 月 <span class="cite sug" title="属于建议或判断，依据见上下文">建议</span>，依据 <span class="cites"><a class="cite" href="sources.html#ev-E1" target="_blank" title="US &#x27;lab grown diamond&#x27; 搜索热度（today 12-m，月均指数）：峰值 2026-04 为 78.8，谷值 2026-01 为 16.8，周峰值 Apr 12 – 18, 2026=100，近 3 月均值较最早 3 月 -4.1% 来源：trends.google.com · 2026-11-04T07:42:44Z">E1</a></span>。</p>
+
+<h2 id="risks">6. 风险与审核</h2>
+  
+  <div class="callout risk">FTC 珠宝指南要求在 “diamond” 附近清楚标注非开采 <span class="cites"><a class="cite" href="sources.html#ev-E114" target="_blank" title="ftc.gov：The many facets of advertising diamonds with clarity | Federal Trade Commission 来源：ftc.gov · 2026-11-04T07:43:37Z">E114</a></span>：每条标题、描述、商品标题都要含 lab-grown。RSA 会随机组合，所以每一条单独都要合规，已在 lint 中逐条检查。</div>
+  
+
+  
+  <ul><li>商标：不投竞品品牌词，已把 Brilliant Earth、Kay 等加为否定词，避免误触和投诉</li><li>比价声明：文案里不写“比天然便宜 X%”；如要写，需具体规格对比并留存依据（同规格 $450 vs $2,800–3,200 <span class="cites"><a class="cite" href="sources.html#ev-E126" target="_blank" title="cnbc.com：What&#x27;s behind the fall of diamond prices to record lows 来源：cnbc.com · 2026-11-04T07:44:36Z">E126</a></span>）</li><li>Merchant Center：运费、退货、价格必须与落地页一致，否则商品会被拒登；页面写明关税已含（de minimis 已暂停 <span class="cites"><a class="cite" href="sources.html#ev-E120" target="_blank" title="carraglobe.com：US De Minimis Exemption Suspended 2026: What Every Importer and E-Commerce Seller Must Do Now - Carra Globe 来源：carraglobe.com · 2026-11-04T07:44:01Z">E120</a></span>）</li><li>价格下跌：批发价 Q2 同比 -13% <span class="cites"><a class="cite" href="sources.html#ev-E97" target="_blank" title="jckonline.com：Lab-Grown Diamond Wholesale Prices Are in Freefall 来源：jckonline.com · 2026-11-04T07:43:28Z">E97</a></span>，竞品可能降价，每月复查购物卡片竞价</li><li>高客单价拒付：开启 3D Secure、签收保价，Google 不承担这部分风险</li></ul>
+  
+
+
+<h2 id="calcs">附录 A：计算说明</h2>
+<table><tr><th>编号</th><th>说明</th><th>公式</th><th>结果</th></tr><tr id="calc-CB1"><td>CB1</td><td>全年预算的月度分配（按搜索热度加权，节点系数为判断）</td><td><code>占比_m = max(月均指数_m × 节点系数_m, 15) / Σ × 100，取整后合计 100；节点系数：2 月 ×1.5、5 月 ×1.2、11 月 ×2.2、12 月 ×2.2；指数：1 月 16.8、2 月 23.2、3 月 28.2、4 月 78.8、5 月 58.2、6 月 44.8、7 月 19.2、8 月 18.2、9 月 20、10 月 18、11 月 18.6、12 月 23.2</code></td><td>1 月 4%、2 月 8%、3 月 6%、4 月 18%、5 月 16%、6 月 10%、7 月 4%、8 月 4%、9 月 5%、10 月 4%、11 月 9%、12 月 12%</td></tr><tr id="calc-CG1"><td>CG1</td><td>google 月预算</td><td><code>总预算 2000 × 100%</code></td><td>$2,000</td></tr><tr id="calc-CG2"><td>CG2</td><td>google 日预算</td><td><code>2,000.00 ÷ 30.4</code></td><td>$65.79</td></tr><tr id="calc-CG3"><td>CG3</td><td>广告系列 G1 预算</td><td><code>2,000.00 × 65%，日 = 月 ÷ 30.4</code></td><td>$1,300/月（$42.76/天）</td></tr><tr id="calc-CG4"><td>CG4</td><td>广告系列 G2 预算</td><td><code>2,000.00 × 35%，日 = 月 ÷ 30.4</code></td><td>$700/月（$23.03/天）</td></tr><tr id="calc-CG5"><td>CG5</td><td>月点击数（按 CPC）</td><td><code>2,000.00 ÷ CPC 4.44</code></td><td>450</td></tr><tr id="calc-CG6"><td>CG6</td><td>月订单数</td><td><code>点击 × CVR 4.50%</code></td><td>20</td></tr><tr id="calc-CG7"><td>CG7</td><td>CPA</td><td><code>2,000.00 ÷ 订单数</code></td><td>$98.67</td></tr><tr id="calc-CG8"><td>CG8</td><td>月销售额</td><td><code>订单 × 客单价 989</code></td><td>$20,047</td></tr><tr id="calc-CG9"><td>CG9</td><td>ROAS</td><td><code>销售额 ÷ 月预算</code></td><td>10.0x</td></tr><tr id="calc-CG10"><td>CG10</td><td>盈亏平衡 CPA</td><td><code>客单价 989 × 毛利率 50%（假设，可替换）</code></td><td>$494</td></tr><tr id="calc-CGC5"><td>CGC5</td><td>保守情景 月点击数</td><td><code>2,000.00 ÷ CPC 4.44</code></td><td>450</td></tr><tr id="calc-CGC6"><td>CGC6</td><td>保守情景 月订单数</td><td><code>点击 × CVR 2.78%</code></td><td>13</td></tr><tr id="calc-CGC7"><td>CGC7</td><td>保守情景 CPA</td><td><code>2,000.00 ÷ 订单数</code></td><td>$160</td></tr><tr id="calc-CGC8"><td>CGC8</td><td>保守情景 月销售额</td><td><code>订单 × 客单价 989</code></td><td>$12,385</td></tr><tr id="calc-CGC9"><td>CGC9</td><td>保守情景 ROAS</td><td><code>销售额 ÷ 月预算</code></td><td>6.2x</td></tr><tr id="calc-CG11"><td>CG11</td><td>关停阈值</td><td><code>盈亏平衡 CPA 494 × 2</code></td><td>$988</td></tr><tr id="calc-CG12"><td>CG12</td><td>耳钉组 CPA 上限（假设毛利 50%）</td><td><code>耳钉中位价 297.5 × 50% = 148.75，取整 $149</code></td><td>$149</td></tr></table>
+<h2 id="gaps">附录 B：数据缺失与假设</h2><ul><li class="gap">没有 Keyword Planner 的真实搜索量和 CPC，关键词出价和点击预估都来自行业基准（proxy 品类）</li><li class="gap">Shopping CPC 基准是 2018–19 年旧数据 [E37]，起始出价为建议值</li><li class="gap">毛利率按 50% 假设，盈亏平衡 CPA 需按真实成本替换</li><li class="gap">品牌名、网站未提供：落地页只写站内路径，未设品牌词系列</li><li class="gap">彩钻同品类价格缺失，G3 放第二阶段</li><li class="gap">文案中的免运费、30 天退货、终身保修、0% APR 分期、14K 金、礼盒都是示例条款，需商家确认能兑现</li></ul>
+
+<h2 id="sources">附录 C：引用证据</h2>
+<p class="note">只列本方案引用到的证据；全部证据见调研报告的数据来源页（<a href="../../sources.html">sources.html</a>）。</p>
+<div class="ev" id="ev-E1"><span class="id">E1</span>US &#39;lab grown diamond&#39; 搜索热度（today 12-m，月均指数）：峰值 2026-04 为 78.8，谷值 2026-01 为 16.8，周峰值 Apr 12 – 18, 2026=100，近 3 月均值较最早 3 月 -4.1%<br>
+<span class="note">google_trends.timeseries · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://trends.google.com/trends/explore?q=lab+grown+diamond&amp;geo=US&amp;date=today+12-m" target="_blank" rel="noopener">trends.google.com</a></span></div><div class="ev" id="ev-E4"><span class="id">E4</span>US &#39;lab grown diamond&#39; 相关查询（today 12-m）飙升前列：apple iphone 17 pro max Breakout，lab grown yellow diamond +400%，oval lab grown diamond engagement ring +350%，lab grown pink diamond +250%，pink diamond +200%；热门前列：diamond ring 100，lab grown diamond ring 100，engagement ring 52，lab grown diamond engagement ring 52，lab diamond earrings 27<br>
+<span class="note">google_trends.related_queries · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://trends.google.com/trends/explore?q=lab+grown+diamond&amp;geo=US&amp;date=today+12-m" target="_blank" rel="noopener">trends.google.com</a></span></div><div class="ev" id="ev-E5"><span class="id">E5</span>US &#39;lab grown diamond&#39; 相关主题（today 12-m）飙升前列：Lab Grown Diamond Earrings Breakout，14k Breakout，IGI +2,100%；热门前列：Diamond 100，Synthetic diamond 80，Ring 42，Carat 32，Engagement ring 24<br>
+<span class="note">google_trends.related_topics · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://trends.google.com/trends/explore?q=lab+grown+diamond&amp;geo=US&amp;date=today+12-m" target="_blank" rel="noopener">trends.google.com</a></span></div><div class="ev" id="ev-E36"><span class="id">E36</span>US google_search CPC 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：$4.44（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026<br>
+<span class="note">ad_benchmark.csv · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://www.wordstream.com/blog/2026-google-ads-benchmarks" target="_blank" rel="noopener">wordstream.com</a></span></div><div class="ev" id="ev-E37"><span class="id">E37</span>US google_shopping CPC 行业基准（clothing_apparel(proxy)，proxy，非实测，数据较旧）：$0.69（2018-08~2019-02），来源 WordStream Google Shopping Ads Benchmarks<br>
+<span class="note">ad_benchmark.csv · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://www.wordstream.com/blog/ws/2019/04/01/shopping-ads-benchmarks" target="_blank" rel="noopener">wordstream.com</a></span></div><div class="ev" id="ev-E40"><span class="id">E40</span>US google_search CVR 行业基准（apparel_fashion_jewelry(proxy)，proxy，非实测）：4.50%（2025-04~2026-03），来源 WordStream by LocaliQ Google Ads Benchmarks 2026<br>
+<span class="note">ad_benchmark.csv · 抓取于 2026-11-04T07:42:44Z · 来源：<a href="https://www.wordstream.com/blog/2026-google-ads-benchmarks" target="_blank" rel="noopener">wordstream.com</a></span></div><div class="ev" id="ev-E45"><span class="id">E45</span>Meta 广告资料库 &#39;lab grown diamond&#39;（US，active，取前 50 条）：样本 50 条广告、26 个广告主，其中 17 个已投放 ≥90 天；形式 VIDEO×23, DPA×17, DCO×8, CAROUSEL×1, IMAGE×1<br>
+<span class="note">meta_ads.summary · 抓取于 2026-11-04T07:42:56Z · 来源：<a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=US&amp;q=lab+grown+diamond&amp;search_type=keyword_unordered&amp;media_type=all" target="_blank" rel="noopener">facebook.com</a></span></div><div class="ev" id="ev-E97"><span class="id">E97</span>jckonline.com：Lab-Grown Diamond Wholesale Prices Are in Freefall<br>
+<span class="note">tavily.search · 抓取于 2026-11-04T07:43:28Z · 来源：<a href="https://www.jckonline.com/editorial-article/lab-grown-wholesale-freefall" target="_blank" rel="noopener">jckonline.com</a></span></div><div class="ev" id="ev-E114"><span class="id">E114</span>ftc.gov：The many facets of advertising diamonds with clarity | Federal Trade Commission<br>
+<span class="note">tavily.search · 抓取于 2026-11-04T07:43:37Z · 来源：<a href="https://www.ftc.gov/business-guidance/blog/2019/05/many-facets-advertising-diamonds-clarity" target="_blank" rel="noopener">ftc.gov</a></span></div><div class="ev" id="ev-E120"><span class="id">E120</span>carraglobe.com：US De Minimis Exemption Suspended 2026: What Every Importer and E-Commerce Seller Must Do Now - Carra Globe<br>
+<span class="note">tavily.search · 抓取于 2026-11-04T07:44:01Z · 来源：<a href="https://carraglobe.com/us-de-minimis-exemption-suspended-2026" target="_blank" rel="noopener">carraglobe.com</a></span></div><div class="ev" id="ev-E126"><span class="id">E126</span>cnbc.com：What&#39;s behind the fall of diamond prices to record lows<br>
+<span class="note">tavily.search · 抓取于 2026-11-04T07:44:36Z · 来源：<a href="https://www.cnbc.com/2026/09/26/whats-behind-the-fall-of-diamond-prices-to-record-lows.html" target="_blank" rel="noopener">cnbc.com</a></span></div><div class="ev" id="ev-E134"><span class="id">E134</span>Google(us) &#39;lab grown diamond engagement ring&#39;：自然结果 8 条、广告 0 条、购物 30 条；购物结果价格 30 个，P25 $1120 / 中位数 $2349.5 / P75 $3489（最低 $297.5）<br>
+<span class="note">serpapi.google · 抓取于 2026-11-04T07:44:50Z · 来源：<a href="https://www.google.com/search?q=lab+grown+diamond+engagement+ring&amp;gl=us&amp;hl=en" target="_blank" rel="noopener">google.com</a></span></div><div class="ev" id="ev-E136"><span class="id">E136</span>Google(us) &#39;lab grown diamond stud earrings&#39;：自然结果 7 条、广告 2 条、购物 60 条；购物结果价格 60 个，P25 $191.25 / 中位数 $297.5 / P75 $577.5（最低 $49.99）<br>
+<span class="note">serpapi.google · 抓取于 2026-11-04T07:44:50Z · 来源：<a href="https://www.google.com/search?q=lab+grown+diamond+stud+earrings&amp;gl=us&amp;hl=en" target="_blank" rel="noopener">google.com</a></span></div><div class="ev" id="ev-E143"><span class="id">E143</span>renaissancejewel.com（Shopify，USD）公开商品 1000+ 个，价格 P25 $989 / 中位数 $1209 / P75 $1249（最低 $89，最高 $2929）；商品多为近期同步的库存（如裸钻），上新数不反映新品节奏；成品首饰 596 个，P25 $989 / 中位数 $1089 / P75 $1249（最低 $89）；品类：戒指 591 个中位 $989，戒托（不含主石） 404 个中位 $1209，耳饰 5 个中位 $1189<br>
+<span class="note">store.shopify_products · 抓取于 2026-11-04T07:45:07Z · 来源：<a href="https://www.renaissancejewel.com/products.json" target="_blank" rel="noopener">renaissancejewel.com</a></span></div><div class="ev" id="ev-E144"><span class="id">E144</span>miadonna.com 首页：Shop Lab Grown Diamond Engagement Rings, Wedding Bands &amp; Fine Jewelry<br>
+<span class="note">store.homepage · 抓取于 2026-11-04T07:45:21Z · 来源：<a href="https://www.miadonna.com/" target="_blank" rel="noopener">miadonna.com</a></span></div><div class="ev" id="ev-E162"><span class="id">E162</span>google 官方规格：智能出价“学习中”状态最长持续天数 = 7 days（&#34;Learning status never lasts more than 7 days&#34;；预算/目标/素材修改不会触发学习状态）<br>
+<span class="note">platform_specs.csv · 抓取于 2026-11-04T08:06:20Z · 来源：<a href="https://support.google.com/google-ads/answer/13020501?hl=en" target="_blank" rel="noopener">support.google.com</a></span></div>
+
+<h2 id="verify">附录 D：校验结果</h2>
+<p>数字 119/119 通过；未注出处 0，与证据不符 0，无效引用 0；文案规格错误 0、提醒 0。</p>
+<p><span class="badge ok">全部通过</span></p>
+<p class="note">规则：说明文字里的数字须带 [E..] / [计算: ..] / [建议] / [假设] 等标记；投放文案里的数字须能在该广告 substantiation 证据中找到，或列入“需商家确认的条款”；字数、条数上限来自 assets/platform_specs.csv（官方帮助文档）。</p>
+</main>
+</body>
+</html>
